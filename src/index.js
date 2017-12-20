@@ -2,7 +2,7 @@
  * @Author: Kvkens(yueming@yonyou.com)
  * @Date:   2017-5-15 00:00:00
  * @Last Modified by:   Kvkens
- * @Last Modified time: 2017-12-20 13:13:51
+ * @Last Modified time: 2017-12-20 17:53:25
  */
 
 const os = require("os");
@@ -10,8 +10,6 @@ const fs = require("fs");
 const chalk = require("chalk");
 const argv = require("minimist")(process.argv.slice(2));
 const commands = argv._;
-const resolve = require("resolve");
-const path = require("path");
 const util = require("./util");
 
 //强制第一时间检查node版本，低版本不兼容
@@ -37,9 +35,9 @@ if (commands.length === 0) {
   let opts = {
     cmd: commands,
     argv: argv,
-    util,
     name: require("../package.json").name
   };
+
   //检测调用的插件是否存在？不存在给出警告
   let pluginPath = util.findPluginPath(commands[0]);
   if (pluginPath) {

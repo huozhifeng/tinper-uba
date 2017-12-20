@@ -2,11 +2,13 @@
  * @Author: Kvkens(yueming@yonyou.com)
  * @Date:   2017-12-19 22:49:14
  * @Last Modified by:   Kvkens
- * @Last Modified time: 2017-12-20 13:13:58
+ * @Last Modified time: 2017-12-20 17:53:17
  */
 
 const chalk = require("chalk");
 const api = require('api-npm');
+const resolve = require("resolve");
+const path = require("path");
 
 /**
  * 获得uba的帮助信息
@@ -45,7 +47,7 @@ exports.findPluginPath = (command) => {
         paths: [path.join(__dirname, '..', 'node_modules')]
       });
     } catch (e) {
-      console.log('');
+      console.log(e);
       console.log('  ' + chalk.green(command) + ' command is not installed.');
       console.log('  You can try to install it by ' + chalk.blue.bold('npm install uba-' + command) + '.');
       console.log('');
