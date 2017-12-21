@@ -1,5 +1,6 @@
 {
   "name": "uba",
+  "preferGlobal": true,
   "version": "3.0.0-alpha.0",
   "description": "a font-end develop tool for tinper",
   "main": "./bin/uba.js",
@@ -7,6 +8,10 @@
     "uba": "./bin/uba.js"
   },
   "scripts": {},
+  "engines": {
+    "node": ">=7.6.0",
+    "npm": ">=3.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iuap-design/tinper-uba.git"

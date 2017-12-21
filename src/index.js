@@ -13,7 +13,7 @@ const commands = argv._;
 const util = require("./util");
 
 //强制第一时间检查node版本，低版本不兼容
-util.checkNodeVersion(6);
+util.checkNodeVersion(7);
 
 //检测输入命令集合参数
 if (commands.length === 0) {
