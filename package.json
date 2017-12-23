@@ -21,10 +21,8 @@
     "design",
     "iuap",
     "yyuap",
-    "yonyou",
-    "sparrow",
-    "neoui",
-    "tinper-uba"
+    "fed",
+    "yonyou"
   ],
   "author": "Yonyou FED",
   "license": "MIT",
@@ -37,8 +35,6 @@
     "chalk": "^2.3.0",
     "minimist": "^1.2.0",
     "resolve": "^1.5.0",
-    "uba-build": "0.0.5",
-    "uba-init": "0.0.51",
     "uba-server": "1.0.0"
   }
 }
